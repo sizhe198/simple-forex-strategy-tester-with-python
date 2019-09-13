@@ -143,9 +143,9 @@ def profit_count020(all_times,max_loss,max_gain):
     return profit_sum
 
 # ETL for data 
-conn=cx_Oracle.connect('sienzhe/sizhe198@localhost/XE')    
+conn=cx_Oracle.connect('name/password@localhost/XE')    
 c=conn.cursor()                                           
-x=c.execute('select * from FOREX_EURU')                   
+x=c.execute('select * from FOREX_EURU') # table name                  
 data=x.fetchall()
 c.close()                                                 
 conn.close()
